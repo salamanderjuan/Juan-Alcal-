@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dare</title>
+    <link rel="icon" href="Proyecto.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylus.css">
+   
+</head>
+<body>
+    <div id="nav">
+    <div class="menu">
+        <div id="heder">
+            <img class="logo" src="Proyecto.svg" alt="">
+            <span id="titulo">Dare</span>
+            <div id="menu-btn">
+                <div id="btn-hamburger"></div>
+                <div id="btn-hamburger"></div>
+                <div id="btn-hamburger"></div>
+            </div>
+        </div>
+     
+        
+        <div id="perfil">
+            <div id="foto"><img class="fotop" src="blank-profile-picture-973460_1280.webp" alt="foto de perfil"></div>
+            <div class="datos1" id="nombre"><span>Juan Alcala</span></div>
+            <div class="datos" id="num-usuario"><span>#1234567</span></div>
+        </div>
+        <div id="menu-item">
+            
+            <div class="item">
+                <item >
+                    <a href="#">
+                        <div class="icon"><a href="#" class="busqueda"> <i class="fas fa-search"></i>
+                        </a></div>
+                        
+                    </a>
+                    <div class="titulo"><span>Busqueda</span></div>
+                </item>
+            </div>
+           <div  class="item">
+            <item>
+                <a href="#">
+                    <div class="icon"><a href="#" class="editar-p"> <i class="fas fa-user-edit"></i>
+                    </a></div> 
+                    <div class="titulo"><span>Editar perfil</span></div>
+                </a>
+            
+            </item>
+           </div>
+            <div class="item"><item>
+                <a href="#">
+                    <div class="icon"><a href="#" class="historia"> <i class="fas fa-history"></i>
+                    </a></div> 
+                    <div class="titulo"><span>Historial de Donaciones</span></div>
+                </a>
+            
+            </item></div>
+           <div class="item"> <item>
+            <a href="#">
+                <div class="icon"><a href="#" class="donar">  <i class="fas fa-donate"></i>
+                </a></div> 
+                <div class="titulo"><span>Donar</span></div>
+            </a>
+        
+        </item></div>
+            <div class="item"><item>
+                <a href="casos.html">
+                    <div class="icon"><a href="casos.html" class="casos">  <i class="fas fa-briefcase"></i>
+                    </a></div> 
+                    <div class="titulo"><a href="casos.html"><span>Casos</span></a></div>
+                </a>
+            
+            </item></div>
+           <div class="item"> <item>
+            <a href="#">
+                <div class="icon"><a href="#" class="configuracion"> <i class="fas fa-cog"></i>
+                </a></div> 
+                <div class="titulo"><span>Configiracion</span></div>
+            </a>
+        
+        </item></div>
+            <div class="item"><item>
+                <a href="#">
+                    <div class="icon"><a href="#" class="segui"> <i class="fas fa-map-marker-alt"></i>
+                    </a></div> 
+                    <div class="titulo"><span>Seguimiento</span></div>
+                </a>
+            
+            </item></div>
+            <div id="nav-content-highlight"></div>
+
+        </div>
+       
+        
+        
+        <script>
+          const btn = document.querySelector('#menu-btn');
+    const menu = document.querySelector('.menu');
+    const logo = document.querySelector('.logo');
+   
+    btn.addEventListener('click', e => {
+      menu.classList.toggle("menu");
+      menu.classList.toggle("menu-collapsed");
+     
+
+    });
+    logo.addEventListener('click', e => {
+      menu.classList.toggle("menu");
+      menu.classList.toggle("menu-collapsed");
+     
+
+    });
+   
+        </script>
+       
+       
+        
+        
+
+
+    </div>
+
+    <div id="buscar" >
+        <input type="search" name="buscar" id="">
+        <input type="button" value="Buscar">
+        <div class="filtro">
+            <input type="button" value="all">
+            <input type="button" value="colombianos">
+            <input type="button" value="venezolanos">
+            <input type="button" value="Menores">
+            <input type="button" value="Desnutricion">
+            <input type="button" value="critico">
+        </div>
+       
+        <div class="estados">
+            <img src="blank-profile-picture-973460_1280.webp" alt="">
+            <img src="blank-profile-picture-973460_1280.webp" alt="">
+            <img src="blank-profile-picture-973460_1280.webp" alt="">
+            <img src="blank-profile-picture-973460_1280.webp" alt="">
+            <img src="blank-profile-picture-973460_1280.webp" alt="">
+            <img src="blank-profile-picture-973460_1280.webp" alt="">
+           
+            
+        </div>
+    </div>
+    <div id="barra-busqueda">
+        
+        <div class="container">
+            
+            <div class="publicaciones"></div>
+          </div>
+          <script>
+            const publicaciones = [
+            {
+                nombre: "Juan Pérez",
+                descripcion: "Necesito ayuda para comprar comida para mi familia.",
+                problema: "Mi familia está pasando por un momento difícil y no tenemos suficiente dinero para comer.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "Fundación Esperanza",
+                descripcion: "Necesitamos donaciones para construir un nuevo refugio para animales.",
+                problema: "Muchos animales abandonados no tienen un lugar seguro donde vivir.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "María García",
+                descripcion: "Necesito ayuda para pagar la operación de mi hijo.",
+                problema: "Mi hijo tiene una enfermedad grave y la operación es muy costosa.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "Fundación Esperanza",
+                descripcion: "Necesitamos donaciones para construir un nuevo refugio para animales.",
+                problema: "Muchos animales abandonados no tienen un lugar seguro donde vivir.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "María García",
+                descripcion: "Necesito ayuda para pagar la operación de mi hijo.",
+                problema: "Mi hijo tiene una enfermedad grave y la operación es muy costosa.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "Fundación Esperanza",
+                descripcion: "Necesitamos donaciones para construir un nuevo refugio para animales.",
+                problema: "Muchos animales abandonados no tienen un lugar seguro donde vivir.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "María García",
+                descripcion: "Necesito ayuda para pagar la operación de mi hijo.",
+                problema: "Mi hijo tiene una enfermedad grave y la operación es muy costosa.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "Fundación Esperanza",
+                descripcion: "Necesitamos donaciones para construir un nuevo refugio para animales.",
+                problema: "Muchos animales abandonados no tienen un lugar seguro donde vivir.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              },
+              {
+                nombre: "María García",
+                descripcion: "Necesito ayuda para pagar la operación de mi hijo.",
+                problema: "Mi hijo tiene una enfermedad grave y la operación es muy costosa.",
+                foto: "blank-profile-picture-973460_1280.webp"
+              }/* Tus publicaciones aquí */
+            ];
+        
+            function cargarPublicaciones() {
+              const publicacionesEl = document.querySelector('.publicaciones');
+              publicaciones.forEach(publicacion => {
+                const publicacionHTML = `
+                  <div class="publicacion">
+                    <div class="foto-nombre">
+                    <img src="${publicacion.foto}" alt="${publicacion.nombre}">
+                    <h3>${publicacion.nombre}</h3>
+                    </div>
+                    
+                    <p>${publicacion.descripcion}</p>
+                    <p>${publicacion.problema}</p>
+                  </div>
+                `;
+                publicacionesEl.innerHTML += publicacionHTML;
+              }); /* El resto de tu código aquí */
+            }
+        
+            window.onload = cargarPublicaciones;
+          </script>
+        
+        <script>
+                 const element = document.getElementById('barra-busqueda');
+                 const busc = document.getElementById('buscar');
+const botn = document.querySelector('#menu-btn');
+const log = document.querySelector('.logo');
+
+let margen = element.style.marginLeft;
+botn.addEventListener('click', e => {
+    margen="500px"  // let margen = element.style.marginLeft; // Actualizar margen dentro del evento
+  if (margen == "500px")  {
+    element.style.marginLeft = "300px";
+    busc.style.marginLeft = "300px";
+  } 
+  if (margen == "300px")  {
+    element.style.marginLeft = "500px";
+    busc.style.marginLeft = "500px";
+  } 
+});
+
+log.addEventListener('click', e => {
+   
+    let margen = element.style.marginLeft;  // Actualizar margen dentro del evento
+  if (margen == "500px") {
+    element.style.marginLeft = "300px";
+    busc.style.marginLeft = "300px";
+  } else{
+    element.style.marginLeft = "500px";
+    busc.style.marginLeft = "500px";
+  }
+});
+        </script>
+    </div>
+    
+</div>
+
+</body>
+</html>
